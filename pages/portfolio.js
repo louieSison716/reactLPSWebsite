@@ -1,13 +1,17 @@
 import Link from 'next/link';
+
 import { Component } from 'react';
-import lowMilesAuto from '../images/lowMilesAuto.png';
-import libertyAutoplex from '../images/libertyAutoplex.png';
-import yalCars from '../images/yalCars.png';
-import nht from '../images/nht.png';
+
+import airvanuatu from '../images/airvanuatu.png';
+import bitcoinChecker from '../images/bitcoinChecker.png';
+import darbyAutoCenter from '../images/darbyAutoCenter.png';
 import discovery from '../images/discovery.png';
 import graceAutoSales from '../images/graceAutoSales.png';
-import darbyAutoCenter from '../images/darbyAutoCenter.png';
-import bitcoinChecker from '../images/bitcoinChecker.png';
+import gwtlogo from '../images/gwtlogo.png';
+import libertyAutoplex from '../images/libertyAutoplex.png';
+import lowMilesAuto from '../images/lowMilesAuto.png';
+import nht from '../images/nht.png';
+import yalCars from '../images/yalCars.png';
 
 class Portfolio extends Component{
   constructor(props){
@@ -35,6 +39,28 @@ render(){
             I started my IT industry career mainly on WordPress PHP Development and Front-end Development, currently i am now focusing on
             Front-end Development mainly using React and Nextjs.
           </p>
+          <div className="row">
+          <div className="col-lg-6 col-md-6 fade-right">
+            <div className="img-holder">
+              <img src={gwtlogo} className="img-responsive"/>
+            </div>
+            <div className={this.state.opacityholder}>
+              <p>Go With Tourism</p>
+              <h6>Drupal PHP Vuejs Html SCSS less Bootstrap Media Query</h6>
+              <a href="https://www.gowithtourism.co.nz/" target="_blank"><i className="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 fade-left">
+            <div className="img-holder">
+              <img src={airvanuatu} className="img-responsive"/>
+            </div>
+            <div className={this.state.opacityholder}>
+              <p>Air Vanuatu</p>
+              <h6>Vuejs Html SCSS less Bootstrap Media Query</h6>
+              <a href="https://www.airvanuatu.com/" target="_blank"><i className="fas fa-link"></i></a>
+            </div>
+          </div>
+        </div>
           <div className="row">
             <div className="col-lg-6 col-md-6 fade-right">
               <div className="img-holder">

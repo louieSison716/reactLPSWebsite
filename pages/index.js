@@ -1,19 +1,25 @@
 import Link from 'next/link';
+
 import { Component } from 'react';
-import html5 from '../images/html5.png';
-import jsx from '../images/jsx.png';
-import css3 from '../images/css3.png';
-import sass from '../images/sass.png';
-import less from '../images/less.png';
+
 import bootstrap from '../images/bootstrap.png';
+import css3 from '../images/css3.png';
+import drupal from '../images/drupal.png';
+import gulp from '../images/gulp.png';
+import html5 from '../images/html5.png';
 import javascript from '../images/javascript.png';
 import jquery from '../images/jquery.png';
+import jsx from '../images/jsx.png';
+import laravel from '../images/laravel.png';
+import less from '../images/less.png';
+import mysql from '../images/mysql.png';
+import next from '../images/nextjs.png';
 import node from '../images/nodejs.png';
 import php from '../images/php.png';
-import mysql from '../images/mysql.png';
+import sass from '../images/sass.png';
+import shopify from '../images/shopify.png';
+import vuejs from '../images/vuejs.png';
 import webpack from '../images/webpack.png';
-import gulp from '../images/gulp.png';
-import next from '../images/nextjs.png';
 import wordpress from '../images/wordpress.png';
 
 class Index extends Component{
@@ -45,15 +51,15 @@ render(){
       </div>
        <div className="skills-container">
          <div className="row">
-           <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6">
               <div className="img-holder">
-                <img src={html5} className="img-responsive"/>
+                <img src={vuejs} className="img-responsive"/>
               </div>
               <div className={this.state.opacityholder}>
-                <p>HTML5</p>
-                <h6>Hypertext Markup Language</h6>
+                <p>Vue.js</p>
+                <h6>Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications</h6>
               </div>
-           </div>
+            </div>
            <div className="col-lg-3 col-md-6 fade-right">
              <div className="img-holder">
                <img src={jsx} className="img-responsive"/>
@@ -65,20 +71,20 @@ render(){
            </div>
            <div className="col-lg-3 col-md-6 fade-left">
              <div className="img-holder">
-               <img src={css3} className="img-responsive"/>
+               <img src={jsx} className="img-responsive"/>
              </div>
              <div className={this.state.opacityholder}>
-                <p>CSS3</p>
-                <h6>Cascading Style Sheets 3</h6>
+                <p>React.js</p>
+                <h6>React is an open-source, front end, JavaScript library for building user interfaces or UI components</h6>
              </div>
            </div>
            <div className="col-lg-3 col-md-6">
              <div className="img-holder">
-               <img src={sass} className="img-responsive"/>
+               <img src={next} className="img-responsive"/>
              </div>
              <div className={this.state.opacityholder}>
-                <p>SASS</p>
-                <h6>SassScript</h6>
+                <p>Next.js</p>
+                <h6>lightweight framework for static and server-rendered applications</h6>
              </div>
            </div>
          </div>
@@ -103,11 +109,11 @@ render(){
            </div>
            <div className="col-lg-3 col-md-6 fade-left">
              <div className="img-holder">
-               <img src={jsx} className="img-responsive"/>
+               <img src={css3} className="img-responsive"/>
              </div>
              <div className={this.state.opacityholder}>
-                <p>REACT</p>
-                <h6>JavaScript Library for Building User Interfaces</h6>
+                <p>CSS3</p>
+                <h6>Cascading Style Sheets 3</h6>
              </div>
            </div>
            <div className="col-lg-3 col-md-6">
@@ -150,11 +156,11 @@ render(){
            </div>
            <div className="col-lg-3 col-md-6">
              <div className="img-holder">
-               <img src={next} className="img-responsive"/>
+               <img src={sass} className="img-responsive"/>
              </div>
              <div className={this.state.opacityholder}>
-                <p>NEXTJS</p>
-                <h6>lightweight framework for static and server-rendered applications</h6>
+                <p>SASS</p>
+                <h6>Sassscript</h6>
              </div>
            </div>
         </div>
@@ -196,8 +202,53 @@ render(){
              </div>
            </div>
          </div>
+         <div className="row">
+          <div className="col-lg-3 col-md-6">
+            <div className="img-holder">
+              <img src={html5} className="img-responsive"/>
+            </div>
+            <div className={this.state.opacityholder}>
+              <p>HTML5</p>
+              <h6>Hypertext Markup Language</h6>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 fade-right">
+            <div className="img-holder">
+              <img src={drupal} className="img-responsive drupal-img"/>
+            </div>
+            <div className={this.state.opacityholder}>
+              <p>Drupal</p>
+              <h6>Drupal is a free and open-source web content management framework written in PHP and distributed under the GNU General Public License</h6>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 fade-left">
+            <div className="img-holder">
+              <img src={laravel} className="img-responsive"/>
+            </div>
+            <div className={this.state.opacityholder}>
+              <p>Laravel</p>
+              <h6>Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony</h6>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+             <div className="img-holder">
+               <img src={shopify} className="img-responsive shopify-img"/>
+             </div>
+             <div className={this.state.opacityholder}>
+                <p>Shopify</p>
+                <h6>Shopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario</h6>
+             </div>
+           </div>
+         </div>
       </div>
       <style jsx>{`
+
+           .shopify-img {
+            height: 60px !important;
+           }
+           .drupal-img {
+             height: 60px !important;
+           }
            .home-holder{
              height:500px;
             }
